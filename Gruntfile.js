@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 			files: ['public/{,*/}*.{html,css,js}']
 			},
 			jade: {
-				files: ['app/**/*.jade']
+				files: ['app/**/*.jade'],
 				tasks: ['jade']
 			},
 			sass: {
