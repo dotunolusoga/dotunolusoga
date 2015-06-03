@@ -52,7 +52,7 @@
   }
 
   .aboutSection {
-  	@include span-columns(12 of 12);
+  	@include span-columns(12 of 12, block-collapse);
   	height: 100%;
 
   	.aboutHeader {
@@ -62,11 +62,35 @@
 	  		@include span-columns(3 of 12, block-collapse);
 	  		border: 1px solid lightgray;
 	  		max-width: 100%;
-	  		height: 20%;
+	  		height: 25%;
+	  		margin-bottom: 0;
   		}
   	}
 
   	.aboutBody {
+  		@include span-columns(9 of 12);
+  		border: 1px solid lightgray;
+  		height: 75%;
+  		float: right;
+  	}
+  }
+
+  .technologies {
+  	@include span-columns(12 of 12, block-collapse);
+  	height: 100%;
+
+  	.techHeader {
+  		@include span-columns(12 of 12, block-collapse);
+
+			h2 {
+	  		@include span-columns(3 of 12, block-collapse);
+	  		border: 1px solid lightgray;
+	  		max-width: 100%;
+	  		height: 20%;
+  		}
+  	}
+
+  	.techStack {
   		@include span-columns(9 of 12, block-collapse);
   		border: 1px solid lightgray;
   		height: 80%;
