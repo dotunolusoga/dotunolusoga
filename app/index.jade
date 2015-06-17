@@ -9,6 +9,7 @@ html
     link(href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400' rel='stylesheet' type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400|Raleway' rel='stylesheet' type='text/css')
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css')
     link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet")
     link(rel='stylesheet', href='css/main.css')
   body
@@ -19,7 +20,7 @@ html
             .main-nav
                 ul
                   li ABOUT
-                  li TECHNOLOGIES
+                  li TECHNOLOGY STACK
                   li PROJECTS
                   li CONTACT
             .pic
@@ -30,13 +31,13 @@ html
                     h2 Dotun Olusoga
                     h2 Web Developer | Builder of Awesome Stuff
         .nav
-            .about.blue
+            .about.blue.button
                 i.fa.fa-user.fa-3x
                 h2 About
             .tech.red
                 i.fa.fa-database.fa-3x
-                h2 Technologies
-            .projects.teal
+                h2 Technology Stack
+            .projects.green
                 i.fa.fa-cogs.fa-3x
                 h2 Projects
             .contact.yellow
@@ -44,8 +45,8 @@ html
                 h2 Contact
 
         .aboutSection
-            .aboutHeader
-                h2.blue ABOUT
+            .aboutHeader.blue
+                h2 About
             .aboutBody
                 h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nibh elit.
                    Ut hendrerit ligula nibh, vel lobortis libero volutpat quis.
@@ -66,7 +67,7 @@ html
             li.block
               img(src="assets/sass.png")
             li.block.red
-              h2 SKILLS
+              h2 Stack
             li.block
               img(src="assets/javascript_logo.png")
             li.block
@@ -78,5 +79,23 @@ html
             li.block
               img(src="assets/rails.png")
             li.block
-              img(src="assets/")
-                  
+              img(src="assets/firebase-logo.png")
+
+        .projects
+          .projectHeader.green
+            h2 Projects
+          .projectBody
+            .village
+              .village_image
+                img(src="assets/villagesquare.png")
+              .village_desc
+            .xhatter
+              .xhatter_image
+                img(src="assets/xhatter.png")
+              .xhatter_desc
+
+        .contact
+          .contactHeader.yellow
+            h2 Contact
+
+
