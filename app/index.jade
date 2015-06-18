@@ -18,11 +18,6 @@ html
 
         .main
             .main-nav
-                ul
-                  li ABOUT
-                  li TECHNOLOGY STACK
-                  li PROJECTS
-                  li CONTACT
             .pic
                 img(src="assets/profile-image.jpg")
 
@@ -30,21 +25,25 @@ html
                 p
                     h2 Dotun Olusoga
                     h2 Web Developer | Builder of Awesome Stuff
-        .nav
+        #nav
             .about.blue.button
+              a(href="#about")
                 i.fa.fa-user.fa-3x
                 h2 About
             .tech.red
+              a(href="#stack")
                 i.fa.fa-database.fa-3x
                 h2 Technology Stack
             .projects.green
+              a(href="#projects")
                 i.fa.fa-cogs.fa-3x
                 h2 Projects
             .contact.yellow
+              a(href="#contact")
                 i.fa.fa-whatsapp.fa-3x
                 h2 Contact
 
-        .aboutSection
+        .aboutSection#about
             .aboutHeader.blue
                 h2 About
             .aboutBody
@@ -54,7 +53,7 @@ html
                    Aliquam vitae libero suscipit, tristique nibh vel, interdum nisi.
                    Maecenas iaculis viverra nulla non venenatis. Nulla facilisi.
 
-        .technologies
+        .technologies#stack
           ul
             li.block
               img(src="assets/AngularJS.png")
@@ -81,7 +80,7 @@ html
             li.block
               img(src="assets/firebase-logo.png")
 
-        .projects
+        .projects#projects
           .projectHeader.green
             h2 Projects
           .projectBody
@@ -94,8 +93,29 @@ html
                 img(src="assets/xhatter.png")
               .xhatter_desc
 
-        .contact
+        .contact#contact
           .contactHeader.yellow
             h2 Contact
+          .contactBody
+            ul
+              li.block
+                a(href="https://github.com/dotunolusoga", target="_blank")
+                  i.fa.fa-github.fa-5x
+              li.block
+                a(href="https://twitter.com/dotunolusoga", target="_blank")
+                  i.fa.fa-twitter.fa-5x
+              li.block
+                a(href="https://medium.com/@dotunolusoga", target="_blank")
+                  i.fa.fa-medium.fa-5x
+              li.block
+                a(href="https://www.linkedin.com/in/dotunolusoga", target="_blank")
+                  i.fa.fa-linkedin.fa-5x
+              li.block
+                a(href="mailto:adedotun.olusoga@gmail.com", target="_blank")
+                  i.fa.fa-envelope.fa-5x
+
+  script(src='../vendor/jquery/dist/jquery.min.js')
+  script(src='../vendor/sticky/jquery.sticky.js')
+  script(src='scripts/main.js')
 
 
